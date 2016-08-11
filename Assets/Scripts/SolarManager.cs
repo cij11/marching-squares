@@ -18,10 +18,10 @@ public class SolarManager : MonoBehaviour {
 		}
 
 		//Small vessel to try nested boarding
-		hull = Instantiate (hullPrefab, this.transform.position + new Vector3(0f, -planetSize/2f - planetSize/3f + 260f, 0f), Quaternion.identity) as GameObject;
+		hull = Instantiate (hullPrefab, this.transform.position + new Vector3(0f, -planetSize/2f - planetSize/3f + 250f, 0f), Quaternion.identity) as GameObject;
 		hull.GetComponent<Hull> ().Initialise (planetSize/8f);
 
-		GameObject player = Instantiate (playerPrefab, new Vector3 (0f, -planetSize/2f - planetSize/2.5f +383f, 0f), Quaternion.identity) as GameObject;
+		GameObject player = Instantiate (playerPrefab, new Vector3 (0f, -planetSize/2f - planetSize/2.5f +381f, 0f), Quaternion.identity) as GameObject;
 		player.GetComponent<Unit> ().Initialise (1.0f);
 	}
 	
